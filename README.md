@@ -9,7 +9,7 @@ definition
 
 ## Setup
 
-Lazy
+Lazy.nvim
 
 ```lua
 return {
