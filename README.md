@@ -7,4 +7,16 @@ only knows about the generated Go file. This plugin overrides `vim.lsp.buf.defin
 for the Go filetype and tries to open the correct temple file at the function
 definition
 
+## Setup
+
+Lazy
+
+```lua
+return {
+  "catgoose/templ-goto-definition",
+  ft = { "go" },
+  config = true,
+}
+```
+
 See: <https://github.com/a-h/templ/issues/387>

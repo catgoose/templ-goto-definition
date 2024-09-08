@@ -1,6 +1,6 @@
 local M = {}
 
-local function init()
+function M.setup()
   local group = vim.api.nvim_create_augroup("TemplGotoDefinition", { clear = true })
   vim.api.nvim_clear_autocmds({ group = group })
   vim.api.nvim_create_autocmd({ "FileType" }, {
@@ -40,7 +40,5 @@ local function init()
     end,
   })
 end
-
-init()
 
 return M
