@@ -7,6 +7,9 @@ only knows about the generated Go file. This plugin overrides `vim.lsp.buf.defin
 for the Go filetype and tries to open the correct temple file at the function
 definition
 
+`templ` treesitter grammar is required for treesitter query to locate function name
+in .templ file. If treesitter is unavailable, text search strategy is used
+
 ## Setup
 
 Lazy.nvim
@@ -16,6 +19,7 @@ return {
   "catgoose/templ-goto-definition",
   ft = { "go" },
   config = true,
+  dependenciies = "nvim-treesitter/nvim-treesitter", -- optional
 }
 ```
 
