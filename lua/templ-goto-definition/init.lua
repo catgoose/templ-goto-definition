@@ -33,7 +33,7 @@ function M.setup()
   local group = vim.api.nvim_create_augroup("TemplGotoDefinition", { clear = true })
   vim.api.nvim_clear_autocmds({ group = group })
   vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "go" },
+    pattern = { "go", "templ" },
     group = group,
     callback = function()
       local lsp_def = vim.lsp.buf.definition

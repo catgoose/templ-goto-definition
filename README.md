@@ -23,4 +23,5 @@ return {
 }
 ```
 
-See: <https://github.com/a-h/templ/issues/387>
+See this templ issue: <https://github.com/a-h/templ/issues/387>
+VSCode version not made by me, but was mentioned in the above issue: <https://github.com/a-h/templ/issues/387#issuecomment-2322872570>
